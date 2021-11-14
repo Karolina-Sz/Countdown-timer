@@ -4,7 +4,7 @@ import time
 while True:
     try:
         print("Hello. This is a countdown timer.")
-        my_string = str(input('Enter date and time in this exact format (yyyy-mm-dd hh:mm): '))
+        my_string = str(input('Enter date and time to which you want to countdown in this exact format (yyyy-mm-dd hh:mm): '))
         time_alarm = datetime.datetime.strptime(my_string, "%Y-%m-%d %H:%M")
 
         def chop_microseconds(time_delta):
